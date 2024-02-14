@@ -17,18 +17,6 @@ function validateEmail() {
     return false;
 }
 
-// email.addEventListener("focusout", (Event) => {
-//     let message = document.getElementById("email-message");
-//     let showMessage = validateEmail();
-//
-//     if (!showMessage) {
-//         message.style.visibility = "visible";
-//     } else {
-//         message.style.visibility = "hidden";
-//     }
-// });
-
-
 //topping validator
 function validateToppings() {
     var inputs = document.getElementsByTagName('input');

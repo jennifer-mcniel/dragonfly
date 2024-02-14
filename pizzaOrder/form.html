@@ -9,9 +9,10 @@
 <body>
 
 <div class="container">
+    <a class="py-3" href="view.php">View all orders</a>
     <h2 class="pt-3">Order a pizza</h2>
 
-    <form method="post" action="https://dragonfly.greenriverdev.com/vardump.php" onsubmit="return validateForm()">
+    <form method="post" action="save.php" onsubmit="return validateForm()">
         <div class="mb-3">
             <label for="inputName" class="form-label">Name:</label>
             <input type="text" class="form-control" id="inputName" name="Name">
@@ -23,7 +24,6 @@
         <div class="mb-3">
             <label for="inputEmail" class="form-label">Email:</label>
             <input type="email" class="form-control" id="inputEmail" name="Email">
-<!--            <small id="email-message">Invalid Email: email must end in @greenriver.edu</small>-->
         </div>
         <div class="mb-3">
             <label for="inputAddress" class="form-label">Address</label>
@@ -35,14 +35,14 @@
         </div>
         <div class="mb-3">
             <label for="inputState" class="form-label">State</label>
-            <input type="text" class="form-control" placeholder="WA" id="inputState" name="City" disabled readonly>
+            <input type="text" class="form-control" placeholder="WA" id="inputState" name="State" disabled readonly>
         </div>
         <div class="form-check form-check-inline mb-3">
             <label class="form-label">Pizza Size:</label><br>
             <input type="radio" class="" id="small" name="size" value="small" checked>
-            <label for="small" class=>Small</label>
+            <label for="small" >Small</label>
             <input type="radio" class="" id="medium" name="size" value="medium">
-            <label for="medium" class=>Medium</label>
+            <label for="medium" >Medium</label>
             <input type="radio" class="" id="large" name="size" value="large">
             <label for="large" class="">Large</label>
         </div>
@@ -81,7 +81,7 @@
             <input type="radio" class="" id="takeout" name="delivery" value="Takeout" checked>
             <label for="takeout" class="">Takeout</label>
         </div>
-        
+
         <div class="mb-3">
             <label for="inputNotes" class="form-label">Notes:</label>
             <input type="text" class="form-control" id="inputNotes" name="Notes">

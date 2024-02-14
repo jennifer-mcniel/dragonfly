@@ -1,4 +1,28 @@
-/*#email-message {*/
-/*    visibility: hidden;*/
-/*    color: darkred;*/
-/*}*/
+.container{
+    width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'Red Hat Display';
+    font-size: .8rem;
+}
+
+.order{
+    background-color: #d7d7d7;
+    border: 2px solid #4d4d4d;
+    border-radius: 10px;
+    padding: 10px;
+    -webkit-box-shadow: 0px 6px 26px -4px rgba(0,0,0,0.28);
+    -moz-box-shadow: 0px 6px 26px -4px rgba(0,0,0,0.28);
+    box-shadow: 0px 6px 26px -4px rgba(0,0,0,0.28);
+}
+.order span{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #dc4343;
+}
+
+h3{
+    text-align: center;
+}
